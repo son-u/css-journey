@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="two-column-layout">
+        <div class="left">
+            <form  class="my-form">
+                <div class="login-welcome-row">
+                    <svg fill="none" height="48" class="logo" viewBox="0 0 40 48" width="40"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m0 9c0-2.76142 2.23858-5 5-5h10c2.7614 0 5 2.23858 5 5v9.8192c.0002.06.0003.1203.0003.1808 0 2.7575 2.2322 4.9936 4.9881 5h.0116 10c2.7614 0 5 2.2386 5 5v10c0 2.7614-2.2386 5-5 5h-10c-2.7614 0-5-2.2386-5-5v-10c0-.0139.0001-.0277.0002-.0416-.0224-2.7422-2.2523-4.9584-4.9999-4.9584-.0129 0-.0258 0-.0387 0h-9.9616c-2.76142 0-5-2.2386-5-5z"
+                            fill="#0c111d" />
+                    </svg>
+                    <h1>Get Started Now</h1>
+                    <p>Enter your credentials to access your account</p>
+                </div>
+                <div class="socials-row">
+                    <a href="#" title="Use Google">
+                        <img src="assets/google.png" alt="Google">
+                        Sign up with Google
+                    </a>
+                    <a href="#" title="Use Apple">
+                        <img src="assets/apple.png" alt="Apple">
+                        Sign up with Apple
+                    </a>
+                </div>
+                <div class="lines">
+                    <div class="line"></div>
+                    or
+                    <div class="line"></div>
+                </div>
+                <div class="text-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="off" placeholder="Your Name" required>
+                    <div class="error-message">Your name is required</div>
+                </div>
+                <div class="text-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="off" placeholder="you@gmail.com" required>
+                    <div class="error-message">Email is in incorrect format</div>
+                </div>
+                <div class="text-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Your password" title="Minimum 6 characters at least 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                    <div class="error-message">Minimum 6 characters at
+                        least 1 Alphabet and 1 Number</div>
+                </div>
+                <div class="checkbox-field">
+                    <input type="checkbox" name="checkbox" id="checkbox" placeholder="I agree to Terms & Privacy" required>
+                    <p>I agree to the <a href="#" title="Terms">Terms and Privacy</a></p>
+                </div>
+                <button type="submit" class="my-form_button">Sign Up</button>
+                <div class="my-form_actions">
+                    <div class="my-form_row">
+                        <div>
+                            <span>Have an account ?</span>
+                            <a href="#" title="Login">Sign In</a>
+                        </div>
+                        <div><a href="#forgot-password" title="Forgot Password">Forgot password?</a></div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    2024  &copy; SHADOW All rights reserved
+                </footer>
+            </form>
+            
+        </div>
+        <div class="right">
+            <div class="box">
+                <h2>Track your time more efficiently</h2>
+                <p>The simples way to manage your workforce!</p>
+                <img src="assets/dashboard.png" class="mockup" alt="dashboard">
+                <div class="logos">
+                    <img src="assets/logos/asana.svg" alt="Asana">
+                    <img src="assets/logos/google.png" alt="Google">
+                    <img src="assets/logos/stripe.png" alt="Stripe">
+                    <img src="assets/logos/spotify.svg" alt="Spotify">
+                    <img src="assets/logos/booking.svg" alt="Booking">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
