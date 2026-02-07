@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Snake Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="snake-style.css">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f40d.png">
+</head>
+
+<body>
+
+    <div class="game-container">
+        <header>
+            <div class="score-board">
+                <div class="score-card">
+                    <span class="label">SCORE</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="score-card high-score">
+                    <span class="label">BEST</span>
+                    <span id="high-score">0</span>
+                </div>
+            </div>
+            <a href="index.html" class="home-btn" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+        </header>
+
+        <div class="canvas-wrapper">
+            <canvas id="game-board"></canvas>
+
+            <div id="start-screen" class="overlay">
+                <h1>SNAKE</h1>
+                <p>Swipe or Arrow Keys to Move</p>
+                <button id="start-btn" class="action-btn">PLAY</button>
+            </div>
+
+            <div id="game-over-screen" class="overlay hidden">
+                <h1>GAME OVER</h1>
+                <p>Score: <span id="final-score">0</span></p>
+                <button id="restart-btn" class="action-btn">PLAY AGAIN</button>
+            </div>
+
+            <div id="pause-screen" class="overlay hidden">
+                <h1>PAUSED</h1>
+                <button id="resume-btn" class="action-btn">RESUME</button>
+            </div>
+        </div>
+
+        <div class="controls-hint">
+            Tap screen to Pause
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <script src="snake-script.js"></script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
   --headline: #020202;
   --text: #8893a5;
   --white: #ffffff;
-  --bg: #ffffff;
+  --bg: #fbf8f8;
   --error: #ff5c5c;
   --border: #ddeaf3;
 }
@@ -313,3 +313,5 @@ body {
   object-fit: contain;
   filter: brightness(0) invert(1);
 }
+
+

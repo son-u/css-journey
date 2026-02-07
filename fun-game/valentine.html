@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Be My Valentine?</title>
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#ffe6e6">
+    <meta name="description" content="A fun Valentine's Day game!">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="https://media.tenor.com/fTTVgygNC_gAAAAi/bear-kiss-bear-kisses.gif">
+
+    <!-- Fonts and Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container"></div>
+
+    <div class="game-container">
+        <div id="game-content">
+            <img src="assets/hero.gif" alt="Cute Bear Asking" class="main-image" id="main-image">
+            <h1 id="question">Will you be my Valentine?</h1>
+
+            <div class="buttons">
+                <button id="yes-btn">Yes</button>
+                <button id="no-btn">No</button>
+            </div>
+        </div>
+
+        <div id="success-content" class="hidden">
+            <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Cute bear kissing">
+            <h1>Yay! I love you too! ❤️</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
